@@ -21,3 +21,5 @@ app.get("/", (req, res) => {
 const server = app.listen(4444, () => {
   console.log(`Server is listening on port ${(server.address() as net.AddressInfo).port}`);
 });
+
+console.log(`Server started on the hostname: ${os.hostname()}`);
