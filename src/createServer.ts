@@ -10,6 +10,7 @@ const content = `
 hostname: ${os.hostname()}
 /proc/version: ${cat("/proc/version")}
 /etc/issue: ${cat("/etc/issue")}
+${(new Date()).toString()}
 </pre>
 `;
 
